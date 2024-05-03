@@ -1,0 +1,10 @@
+services:
+  finalProject-database:
+    image: postgres:alpine
+    container_name: finalproject-database
+    ports:
+      - "6001:5432"
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: finalproject
